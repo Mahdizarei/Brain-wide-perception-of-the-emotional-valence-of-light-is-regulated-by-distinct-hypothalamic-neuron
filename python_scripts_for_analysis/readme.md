@@ -3,6 +3,10 @@
 ## light_dark_choice function is need for this analyses
 
 ```python
+'''
+Input: Cells DFF Values; dff_data (#cell × #time-points matrix)
+Output: Indices of the 7 groups (light, dark, light-transition and so on) of the cells
+'''
 
 id_L =[]
 id_D =[]
@@ -11,8 +15,8 @@ id_trans_D =[]
 id_Init_L =[]
 id_Init_D =[]
 id_NOResp =[]    
-for i in range(len(df_tmp)):
-    ld_res = light_dark_choice (df_tmp[i], interval_size =200, repetition = 7, interval_strtl_steps = 3)
+for i in range(len(dff_data)):
+    ld_res = light_dark_choice (dff_data[i], interval_size =200, repetition = 7, interval_strtl_steps = 3)
     if ld_res [0] == 'Light':
         id_L.append(i)
     if ld_res [0] == 'Dark':
@@ -37,6 +41,9 @@ for i in range(len(df_tmp)):
 3. ### source_target_hit
 
 ```python
+'''
+Input: Tail angles time series; tail_dta (1 × #time-points array)
+'''
 
 # Tail angles time series
 tail_dta = array([0.     , 1.4004 , 1.4004 , ..., 0.92304, 0.92304, 0.92304])
