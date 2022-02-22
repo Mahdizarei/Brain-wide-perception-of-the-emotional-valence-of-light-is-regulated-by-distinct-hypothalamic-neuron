@@ -1,3 +1,34 @@
+# Light/Dark choice
+
+## light_dark_choice function is need for this analyses
+
+```python
+
+id_L =[]
+id_D =[]
+id_trans_L =[]
+id_trans_D =[]
+id_Init_L =[]
+id_Init_D =[]
+id_NOResp =[]    
+for i in range(len(df_tmp)):
+    ld_res = light_dark_choice (df_tmp[i], interval_size =200, repetition = 7, interval_strtl_steps = 3)
+    if ld_res [0] == 'Light':
+        id_L.append(i)
+    if ld_res [0] == 'Dark':
+        id_D.append(i)
+    if ld_res [0] == 'Light_transition':
+        id_trans_L.append(i)
+    if ld_res [0] == 'Dark_transition':
+        id_trans_D.append(i)
+    if ld_res [0] == 'Light_initial':
+        id_Init_L.append(i)
+    if ld_res [0] == 'Dark_initial':
+        id_Init_D.append(i)
+    if ld_res [0] == 'no_response':
+        id_NOResp.append(i)
+        
+```
 
 # Tail events detection
 ## Three functions are need for this analysis: 
