@@ -2,7 +2,7 @@
 # Tail events detection
 ## Three functions are need for this analysis: 
 1. ### tail_movement_CLASS
-2. ### event_count which is called by tail_movement_CLASS (it is in the TestingThescripts_Tail_mv.py)
+2. ### event_count which is called by tail_movement_CLASS (it is in TestingThescripts_Tail_mv.py)
 3. ### source_target_hit
 
 ```python
