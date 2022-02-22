@@ -1,4 +1,6 @@
 
+# Tail events detection
+
 ```python
 
 # Tail angles time series
