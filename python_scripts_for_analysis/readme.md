@@ -1,5 +1,6 @@
 
 ```python
+
 # Tail angles time series
 tail_dta = array([0.     , 1.4004 , 1.4004 , ..., 0.92304, 0.92304, 0.92304])
 
@@ -12,13 +13,13 @@ Merging the overlapped events (The priority of the turn is higher
 than the priority of the move, and the priority of the struggle is higher than the priority of the turn. )
  '''
 event_turn, event_turn_idx , event_move, event_move_idx, mached_sor_tar = \ 
-  source_target_hit (tail_dta, event_turn , event_turn_idx, event_move, event_move_idx, effect_size = 5)
+    source_target_hit (tail_dta, event_turn , event_turn_idx, event_move, event_move_idx, effect_size = 5)
 
 event_struggle , event_struggle_idx  , event_move, event_move_idx, mached_sor_tar = \ 
-  source_target_hit (tail_dta, event_struggle , event_struggle_idx,  event_move, event_move_idx, effect_size = 200)
+    source_target_hit (tail_dta, event_struggle , event_struggle_idx,  event_move, event_move_idx, effect_size = 200)
 
 event_struggle , event_struggle_idx, event_turn, event_turn_idx, mached_sor_tar = \
-  source_target_hit (tail_dta, event_struggle ,event_struggle_idx,  event_turn, event_turn_idx, effect_size = 25 )    
+    source_target_hit (tail_dta, event_struggle ,event_struggle_idx,  event_turn, event_turn_idx, effect_size = 25 )    
    
 
 # Foreward movements
