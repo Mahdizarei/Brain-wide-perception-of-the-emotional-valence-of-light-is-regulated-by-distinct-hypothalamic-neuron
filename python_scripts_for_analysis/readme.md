@@ -1,6 +1,6 @@
-# Light/Dark choice
+# Classification of cells (ROIs) based on their photic response properties
 
-## light_dark_choice function is need for this analyses
+* light_dark_choice function is need for this analyses
 
 ```python
 '''
@@ -34,11 +34,11 @@ for i in range(len(dff_data)):
         
 ```
 
-# Tail events detection
-## Three functions are need for this analysis: 
-1. ### tail_movement_CLASS
-2. ### event_count which is called by tail_movement_CLASS (it is in TestingThescripts_Tail_mv.py)
-3. ### source_target_hit
+# Classification of tail movement events 
+* Three functions are need for this analysis: 
+    1. ### tail_movement_CLASS
+    2. ### event_count which is called by tail_movement_CLASS (it is in TestingThescripts_Tail_mv.py)
+    3. ### source_target_hit
 
 ```python
 '''
